@@ -60,10 +60,17 @@ static void _checkPath()
     if (0 == s_resourcePath.length())
     {
         WCHAR utf16Path[CC_MAX_PATH] = {0};
-        GetCurrentDirectoryW(sizeof(utf16Path)-1, utf16Path);
+        // Use executable directory instead of current working directory,
+        // so that resources can be found regardless of where the exe is launched from.
+        GetModuleFileNameW(NULL, utf16Path, CC_MAX_PATH);
+        // Strip the executable name to get the directory
+        WCHAR* lastSlash = wcsrchr(utf16Path, L'\\');
+        if (lastSlash) {
+            *lastSlash = L'\0';
+        }
         
         char utf8Path[CC_MAX_PATH] = {0};
-        int nNum = WideCharToMultiByte(CP_UTF8, 0, utf16Path, -1, utf8Path, sizeof(utf8Path), NULL, NULL);
+        WideCharToMultiByte(CP_UTF8, 0, utf16Path, -1, utf8Path, sizeof(utf8Path), NULL, NULL);
 
         s_resourcePath = convertPathFormatToUnixStyle(utf8Path);
         s_resourcePath.append("/");
