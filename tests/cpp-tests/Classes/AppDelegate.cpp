@@ -101,6 +101,9 @@ bool AppDelegate::applicationDidFinishLaunching()
         searchPaths.push_back("scenetest/TriggerTest");
     }
     
+    // Add Resources as fallback search path (setSearchPaths will replace all paths,
+    // so Resources must be included here, otherwise resources like Images/close.png won't be found)
+    searchPaths.push_back("Resources");
     fileUtils->setSearchPaths(searchPaths);
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8) || (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
