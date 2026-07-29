@@ -1,2 +1,2 @@
 CompileFlags:
-  Add: [-xc++, -std=c++11]
+  Remove: [-std=c99]
