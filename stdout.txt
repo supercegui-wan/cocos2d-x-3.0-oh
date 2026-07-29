@@ -27,62 +27,9 @@ Ready for OpenGL 2.0
 }
 
 
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
-Get data from file(fonts/arial.ttf) failed, error code is 32
 Console: listening on  0.0.0.0 : 5678
+"/cc_fps_images" rc=4 id=3 999 x 54 @ 16 bpp => 105 KB
+"G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/Resources/Images/close.png" rc=3 id=4 32 x 32 @ 32 bpp => 4 KB
+TextureCache dumpDebugInfo: 2 textures, for 109 KB (0.11 MB)
+
+
