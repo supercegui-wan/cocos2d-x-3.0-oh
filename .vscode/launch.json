@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Debug MH-Game (Win32)",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/MH-Game.exe",
             "args": [],
@@ -11,14 +11,13 @@
             "cwd": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug",
             "environment": [],
             "externalConsole": true,
-            "symbolSearchPath": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug;${workspaceFolder}/build/win32-msvc-vs2013-x86/lib/Debug",
             "sourceFileMap": {
                 "/cocos2d-x-3.0-oh": "${workspaceFolder}"
             }
         },
         {
             "name": "Debug MH-Game - No Console",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/MH-Game.exe",
             "args": [],
@@ -26,7 +25,6 @@
             "cwd": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug",
             "environment": [],
             "externalConsole": false,
-            "symbolSearchPath": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug;${workspaceFolder}/build/win32-msvc-vs2013-x86/lib/Debug",
             "sourceFileMap": {
                 "/cocos2d-x-3.0-oh": "${workspaceFolder}"
             }
