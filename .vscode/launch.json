@@ -2,31 +2,31 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug cpp-tests (Win32)",
+            "name": "Debug MH-Game (Win32)",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/cpp-tests.exe",
+            "program": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/MH-Game.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug",
+            "cwd": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug",
             "environment": [],
             "externalConsole": true,
-            "symbolSearchPath": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug;${workspaceFolder}/build/win32-msvc-vs2013-x86/lib/Debug",
+            "symbolSearchPath": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug;${workspaceFolder}/build/win32-msvc-vs2013-x86/lib/Debug",
             "sourceFileMap": {
                 "/cocos2d-x-3.0-oh": "${workspaceFolder}"
             }
         },
         {
-            "name": "Debug cpp-tests - No Console",
+            "name": "Debug MH-Game - No Console",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/cpp-tests.exe",
+            "program": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/MH-Game.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug",
+            "cwd": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug",
             "environment": [],
             "externalConsole": false,
-            "symbolSearchPath": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug;${workspaceFolder}/build/win32-msvc-vs2013-x86/lib/Debug",
+            "symbolSearchPath": "${workspaceFolder}/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug;${workspaceFolder}/build/win32-msvc-vs2013-x86/lib/Debug",
             "sourceFileMap": {
                 "/cocos2d-x-3.0-oh": "${workspaceFolder}"
             }
