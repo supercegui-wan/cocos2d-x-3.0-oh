@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0854EB2F-140F-3BDC-A6BD-665777246116}</ProjectGuid>
+    <ProjectGuid>{0F84FFC5-10CF-361C-9C6C-3457CF3F140F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>MH-Game</ProjectName>
@@ -56,25 +56,25 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\bin\MH-Game\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cpp-tests.dir\Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MH-Game.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MH-Game</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\bin\MH-Game\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cpp-tests.dir\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MH-Game.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MH-Game</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\bin\MH-Game\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cpp-tests.dir\MinSizeRel\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MH-Game.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MH-Game</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\bin\MH-Game\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cpp-tests.dir\RelWithDebInfo\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MH-Game.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">MH-Game</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
@@ -109,83 +109,83 @@
     <PostBuildEvent>
       <Message>Copying 32-bit DLLs to output directory</Message>
       <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/glfw3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/glfw3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/glew32.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libjpeg-8.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libjpeg-8.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libpng16-16.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libpng16-16.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libtiff-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libtiff-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/webp/prebuilt/win32/libwebp-7.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libwebp-7.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/webp/prebuilt/win32/libwebp-7.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libwebp-7.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/freetype2/prebuilt/win32/libfreetype-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libfreetype-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/freetype2/prebuilt/win32/libfreetype-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libfreetype-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/curl/prebuilt/win32/libcurl-4.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libcurl-4.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/curl/prebuilt/win32/libcurl-4.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libcurl-4.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/zlib/prebuilt/zlib1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/zlib1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/zlib/prebuilt/zlib1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/icon/prebuilt/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libiconv-2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/icon/prebuilt/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libiconv-2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgcc_s_dw2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libgcc_s_dw2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgcc_s_dw2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libgcc_s_dw2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libwinpthread-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libwinpthread-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libwinpthread-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libwinpthread-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libstdc++-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libstdc++-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libstdc++-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libstdc++-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlidec.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libbrotlidec.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlidec.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libbrotlidec.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlicommon.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libbrotlicommon.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlicommon.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libbrotlicommon.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libidn2-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libidn2-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libidn2-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libidn2-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libunistring-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libunistring-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libunistring-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libunistring-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp2-14.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libnghttp2-14.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp2-14.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libnghttp2-14.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp3-9.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libnghttp3-9.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp3-9.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libnghttp3-9.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libngtcp2-16.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libngtcp2-16.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2_crypto_ossl-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libngtcp2_crypto_ossl-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2_crypto_ossl-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libngtcp2_crypto_ossl-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpsl-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libpsl-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpsl-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libpsl-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssh2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libssh2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssh2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libssh2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libzstd.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libzstd.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libzstd.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libzstd.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcrypto-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libcrypto-3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcrypto-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libcrypto-3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssl-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libssl-3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssl-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libssl-3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libjbig-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libjbig-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libjbig-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libjbig-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libLerc.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libLerc.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libLerc.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libLerc.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libdeflate.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libdeflate.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libdeflate.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libdeflate.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/liblzma-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/liblzma-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/liblzma-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/liblzma-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libsharpyuv-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libsharpyuv-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libsharpyuv-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libsharpyuv-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbz2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libbz2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbz2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libbz2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libintl-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libintl-8.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libintl-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libintl-8.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libiconv-2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libiconv-2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcharset-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libcharset-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcharset-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libcharset-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libharfbuzz-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libharfbuzz-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libharfbuzz-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libharfbuzz-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgraphite2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libgraphite2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgraphite2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libgraphite2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libglib-2.0-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libglib-2.0-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libglib-2.0-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libglib-2.0-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpcre2-8-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/libpcre2-8-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpcre2-8-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libpcre2-8-0.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -200,8 +200,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/Debug/cpp-tests.lib</ImportLibrary>
-      <ProgramDataBaseFile>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Debug/cpp-tests.pdb</ProgramDataBaseFile>
+      <ImportLibrary>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/Debug/MH-Game.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/MH-Game.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -240,83 +240,83 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>Copying 32-bit DLLs to output directory</Message>
       <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/glfw3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/glfw3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/glew32.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libjpeg-8.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libjpeg-8.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libpng16-16.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libpng16-16.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libtiff-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libtiff-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/webp/prebuilt/win32/libwebp-7.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libwebp-7.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/webp/prebuilt/win32/libwebp-7.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libwebp-7.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/freetype2/prebuilt/win32/libfreetype-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libfreetype-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/freetype2/prebuilt/win32/libfreetype-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libfreetype-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/curl/prebuilt/win32/libcurl-4.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libcurl-4.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/curl/prebuilt/win32/libcurl-4.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libcurl-4.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/zlib/prebuilt/zlib1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/zlib1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/zlib/prebuilt/zlib1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/icon/prebuilt/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libiconv-2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/icon/prebuilt/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libiconv-2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgcc_s_dw2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libgcc_s_dw2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgcc_s_dw2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libgcc_s_dw2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libwinpthread-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libwinpthread-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libwinpthread-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libwinpthread-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libstdc++-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libstdc++-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libstdc++-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libstdc++-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlidec.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libbrotlidec.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlidec.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libbrotlidec.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlicommon.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libbrotlicommon.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlicommon.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libbrotlicommon.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libidn2-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libidn2-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libidn2-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libidn2-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libunistring-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libunistring-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libunistring-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libunistring-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp2-14.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libnghttp2-14.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp2-14.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libnghttp2-14.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp3-9.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libnghttp3-9.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp3-9.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libnghttp3-9.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libngtcp2-16.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libngtcp2-16.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2_crypto_ossl-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libngtcp2_crypto_ossl-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2_crypto_ossl-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libngtcp2_crypto_ossl-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpsl-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libpsl-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpsl-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libpsl-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssh2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libssh2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssh2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libssh2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libzstd.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libzstd.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libzstd.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libzstd.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcrypto-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libcrypto-3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcrypto-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libcrypto-3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssl-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libssl-3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssl-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libssl-3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libjbig-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libjbig-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libjbig-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libjbig-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libLerc.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libLerc.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libLerc.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libLerc.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libdeflate.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libdeflate.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libdeflate.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libdeflate.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/liblzma-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/liblzma-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/liblzma-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/liblzma-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libsharpyuv-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libsharpyuv-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libsharpyuv-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libsharpyuv-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbz2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libbz2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbz2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libbz2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libintl-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libintl-8.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libintl-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libintl-8.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libiconv-2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libiconv-2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcharset-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libcharset-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcharset-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libcharset-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libharfbuzz-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libharfbuzz-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libharfbuzz-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libharfbuzz-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgraphite2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libgraphite2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgraphite2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libgraphite2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libglib-2.0-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libglib-2.0-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libglib-2.0-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libglib-2.0-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpcre2-8-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/libpcre2-8-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpcre2-8-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libpcre2-8-0.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -331,8 +331,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/Release/cpp-tests.lib</ImportLibrary>
-      <ProgramDataBaseFile>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/Release/cpp-tests.pdb</ProgramDataBaseFile>
+      <ImportLibrary>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/Release/MH-Game.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/MH-Game.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -371,83 +371,83 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>Copying 32-bit DLLs to output directory</Message>
       <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/glfw3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/glfw3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/glew32.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libjpeg-8.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libjpeg-8.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libpng16-16.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libpng16-16.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libtiff-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libtiff-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/webp/prebuilt/win32/libwebp-7.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libwebp-7.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/webp/prebuilt/win32/libwebp-7.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libwebp-7.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/freetype2/prebuilt/win32/libfreetype-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libfreetype-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/freetype2/prebuilt/win32/libfreetype-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libfreetype-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/curl/prebuilt/win32/libcurl-4.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libcurl-4.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/curl/prebuilt/win32/libcurl-4.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libcurl-4.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/zlib/prebuilt/zlib1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/zlib1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/zlib/prebuilt/zlib1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/icon/prebuilt/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libiconv-2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/icon/prebuilt/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libiconv-2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgcc_s_dw2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libgcc_s_dw2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgcc_s_dw2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libgcc_s_dw2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libwinpthread-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libwinpthread-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libwinpthread-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libwinpthread-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libstdc++-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libstdc++-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libstdc++-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libstdc++-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlidec.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libbrotlidec.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlidec.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libbrotlidec.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlicommon.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libbrotlicommon.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlicommon.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libbrotlicommon.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libidn2-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libidn2-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libidn2-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libidn2-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libunistring-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libunistring-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libunistring-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libunistring-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp2-14.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libnghttp2-14.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp2-14.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libnghttp2-14.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp3-9.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libnghttp3-9.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp3-9.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libnghttp3-9.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libngtcp2-16.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libngtcp2-16.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2_crypto_ossl-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libngtcp2_crypto_ossl-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2_crypto_ossl-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libngtcp2_crypto_ossl-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpsl-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libpsl-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpsl-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libpsl-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssh2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libssh2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssh2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libssh2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libzstd.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libzstd.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libzstd.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libzstd.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcrypto-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libcrypto-3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcrypto-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libcrypto-3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssl-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libssl-3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssl-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libssl-3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libjbig-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libjbig-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libjbig-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libjbig-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libLerc.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libLerc.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libLerc.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libLerc.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libdeflate.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libdeflate.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libdeflate.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libdeflate.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/liblzma-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/liblzma-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/liblzma-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/liblzma-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libsharpyuv-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libsharpyuv-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libsharpyuv-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libsharpyuv-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbz2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libbz2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbz2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libbz2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libintl-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libintl-8.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libintl-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libintl-8.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libiconv-2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libiconv-2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcharset-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libcharset-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcharset-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libcharset-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libharfbuzz-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libharfbuzz-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libharfbuzz-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libharfbuzz-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgraphite2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libgraphite2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgraphite2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libgraphite2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libglib-2.0-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libglib-2.0-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libglib-2.0-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libglib-2.0-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpcre2-8-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/libpcre2-8-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpcre2-8-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libpcre2-8-0.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -462,8 +462,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/MinSizeRel/cpp-tests.lib</ImportLibrary>
-      <ProgramDataBaseFile>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/MinSizeRel/cpp-tests.pdb</ProgramDataBaseFile>
+      <ImportLibrary>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/MinSizeRel/MH-Game.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/MH-Game.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -502,83 +502,83 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>Copying 32-bit DLLs to output directory</Message>
       <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/glfw3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/glfw3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/glew32.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libjpeg-8.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libjpeg-8.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libpng16-16.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libpng16-16.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libtiff-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libtiff-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/webp/prebuilt/win32/libwebp-7.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libwebp-7.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/webp/prebuilt/win32/libwebp-7.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libwebp-7.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/freetype2/prebuilt/win32/libfreetype-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libfreetype-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/freetype2/prebuilt/win32/libfreetype-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libfreetype-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/curl/prebuilt/win32/libcurl-4.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libcurl-4.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/curl/prebuilt/win32/libcurl-4.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libcurl-4.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/zlib/prebuilt/zlib1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/zlib1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/zlib/prebuilt/zlib1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/icon/prebuilt/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libiconv-2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/icon/prebuilt/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libiconv-2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgcc_s_dw2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libgcc_s_dw2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgcc_s_dw2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libgcc_s_dw2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libwinpthread-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libwinpthread-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libwinpthread-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libwinpthread-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libstdc++-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libstdc++-6.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libstdc++-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libstdc++-6.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlidec.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libbrotlidec.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlidec.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libbrotlidec.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlicommon.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libbrotlicommon.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbrotlicommon.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libbrotlicommon.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libidn2-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libidn2-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libidn2-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libidn2-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libunistring-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libunistring-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libunistring-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libunistring-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp2-14.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libnghttp2-14.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp2-14.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libnghttp2-14.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp3-9.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libnghttp3-9.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libnghttp3-9.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libnghttp3-9.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libngtcp2-16.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libngtcp2-16.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2_crypto_ossl-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libngtcp2_crypto_ossl-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libngtcp2_crypto_ossl-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libngtcp2_crypto_ossl-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpsl-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libpsl-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpsl-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libpsl-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssh2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libssh2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssh2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libssh2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libzstd.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libzstd.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libzstd.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libzstd.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcrypto-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libcrypto-3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcrypto-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libcrypto-3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssl-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libssl-3.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libssl-3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libssl-3.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libjbig-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libjbig-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libjbig-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libjbig-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libLerc.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libLerc.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libLerc.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libLerc.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libdeflate.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libdeflate.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libdeflate.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libdeflate.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/liblzma-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/liblzma-5.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/liblzma-5.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/liblzma-5.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libsharpyuv-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libsharpyuv-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libsharpyuv-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libsharpyuv-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbz2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libbz2-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libbz2-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libbz2-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libintl-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libintl-8.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libintl-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libintl-8.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libiconv-2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libiconv-2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libiconv-2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcharset-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libcharset-1.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libcharset-1.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libcharset-1.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libharfbuzz-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libharfbuzz-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libharfbuzz-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libharfbuzz-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgraphite2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libgraphite2.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libgraphite2.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libgraphite2.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libglib-2.0-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libglib-2.0-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libglib-2.0-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libglib-2.0-0.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpcre2-8-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/libpcre2-8-0.dll
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/msys64/mingw32/bin/libpcre2-8-0.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libpcre2-8-0.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -593,8 +593,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/RelWithDebInfo/cpp-tests.lib</ImportLibrary>
-      <ProgramDataBaseFile>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/cpp-tests/RelWithDebInfo/cpp-tests.pdb</ProgramDataBaseFile>
+      <ImportLibrary>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/RelWithDebInfo/MH-Game.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/MH-Game.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>

@@ -163,6 +163,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{09AF778E-C76A-3D6B-A45E-DE60ADBDD2EB}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
+    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\tests\cpp-tests\MH-Game.vcxproj">
+      <Project>{0F84FFC5-10CF-361C-9C6C-3457CF3F140F}</Project>
+      <Name>MH-Game</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\tests\cpp-tests\MH-Game_PRE_BUILD.vcxproj">
+      <Project>{77650B2D-772E-30BA-9E90-BB825A468E10}</Project>
+      <Name>MH-Game_PRE_BUILD</Name>
+    </ProjectReference>
     <ProjectReference Include="G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\cocos\audio\audio.vcxproj">
       <Project>{8AF13B3D-8578-3F60-8FD4-E87BFA727A44}</Project>
       <Name>audio</Name>
@@ -190,14 +198,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\cocos\editor-support\cocostudio\cocostudio.vcxproj">
       <Project>{D99BDDDE-2340-361D-BF66-3CE243ACB6F2}</Project>
       <Name>cocostudio</Name>
-    </ProjectReference>
-    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\tests\cpp-tests\cpp-tests.vcxproj">
-      <Project>{0854EB2F-140F-3BDC-A6BD-665777246116}</Project>
-      <Name>cpp-tests</Name>
-    </ProjectReference>
-    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\tests\cpp-tests\cpp-tests_PRE_BUILD.vcxproj">
-      <Project>{540FA479-B826-3885-BFF4-32614541DBB2}</Project>
-      <Name>cpp-tests_PRE_BUILD</Name>
     </ProjectReference>
     <ProjectReference Include="G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\extensions\extensions.vcxproj">
       <Project>{664B7666-7A61-336E-BA3A-7D49681C2A8B}</Project>

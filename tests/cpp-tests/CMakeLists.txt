@@ -1,4 +1,4 @@
-set(APP_NAME cpp-tests)
+set(APP_NAME MH-Game)
 
 if(OHOS)
   project(${APP_NAME})

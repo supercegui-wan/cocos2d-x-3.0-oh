@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{540FA479-B826-3885-BFF4-32614541DBB2}</ProjectGuid>
+    <ProjectGuid>{B059EE64-AD9C-3480-B5EE-A15265EF9EB2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
-    <ProjectName>cpp-tests_PRE_BUILD</ProjectName>
+    <ProjectName>MH-Game_CORE_PRE_BUILD</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -69,20 +69,6 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PreBuildEvent>
-      <Message>cpp-tests_PRE_BUILD ...</Message>
-      <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
-if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
@@ -93,20 +79,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PreBuildEvent>
-      <Message>cpp-tests_PRE_BUILD ...</Message>
-      <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
-if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <Midl>
@@ -117,20 +89,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PreBuildEvent>
-      <Message>cpp-tests_PRE_BUILD ...</Message>
-      <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
-if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <Midl>
@@ -141,20 +99,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PreBuildEvent>
-      <Message>cpp-tests_PRE_BUILD ...</Message>
-      <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
-if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="G:\cocos2d-x-3.0-oh\tests\cpp-tests\CMakeLists.txt">
@@ -218,10 +162,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\ZERO_CHECK.vcxproj">
       <Project>{09AF778E-C76A-3D6B-A45E-DE60ADBDD2EB}</Project>
       <Name>ZERO_CHECK</Name>
-    </ProjectReference>
-    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build\win32-msvc-vs2013-x86\tests\cpp-tests\cpp-tests_CORE_PRE_BUILD.vcxproj">
-      <Project>{E9B83E86-EEF4-3F42-AD29-049790668ED1}</Project>
-      <Name>cpp-tests_CORE_PRE_BUILD</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
