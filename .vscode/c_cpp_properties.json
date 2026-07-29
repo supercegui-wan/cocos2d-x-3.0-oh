@@ -49,7 +49,7 @@
                 "CC_ENABLE_CHIPMUNK_INTEGRATION=1"
             ],
             "intelliSenseMode": "msvc-x86",
-            "cStandard": "c99",
+
             "cppStandard": "c++11"
         }
     ],
