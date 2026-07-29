@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\base64-decode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\client-handshake.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\client-parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\extension-deflate-frame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\extension-deflate-stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\extension.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\handshake.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\libwebsockets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\minilex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\parsers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\server-handshake.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\lib\sha-1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\win32port\win32helpers\getopt_long.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\win32port\win32helpers\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\win32port\win32helpers\gettimeofday.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\win32port\win32helpers\websock-w32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\cocos2d-x-3.0-oh\external\libwebsockets-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5F33F32A-9F73-3943-A30E-FF4D5D4BC601}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

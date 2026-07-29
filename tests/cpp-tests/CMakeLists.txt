@@ -263,9 +263,15 @@ if(OHOS)
     # target_link_libraries(${PROJECT_NAME} PUBLIC libace_napi.z.so extensions)
     # add_subdirectory(${COCOS2DX_ROOT_PATH}/extensions)
 else()
-  add_executable(${APP_NAME}
-    ${SAMPLE_SRC}
-  )
+  if(WIN32)
+    add_executable(${APP_NAME} WIN32
+      ${SAMPLE_SRC}
+    )
+  else()
+    add_executable(${APP_NAME}
+      ${SAMPLE_SRC}
+    )
+  endif()
 endif()
 
 target_link_libraries(${APP_NAME} PRIVATE
@@ -289,3 +295,128 @@ pre_build(${APP_NAME}
   COMMAND ${CMAKE_COMMAND} -E remove_directory ${APP_BIN_DIR}/Resources
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/Resources ${APP_BIN_DIR}/Resources
   )
+
+if(WIN32)
+  # Copy prebuilt 32-bit DLLs to the output directory
+  add_custom_command(TARGET ${APP_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/glfw3/prebuilt/win32/glfw3.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/glfw3.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/win32-specific/gles/prebuilt/glew32.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/glew32.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/jpeg/prebuilt/win32/libjpeg-8.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libjpeg-8.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/png/prebuilt/win32/libpng16-16.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libpng16-16.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/tiff/prebuilt/win32/libtiff-6.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libtiff-6.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/webp/prebuilt/win32/libwebp-7.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libwebp-7.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/freetype2/prebuilt/win32/libfreetype-6.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libfreetype-6.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/curl/prebuilt/win32/libcurl-4.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libcurl-4.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/win32-specific/zlib/prebuilt/zlib1.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/zlib1.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "${CMAKE_SOURCE_DIR}/external/win32-specific/icon/prebuilt/libiconv-2.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libiconv-2.dll"
+    # Copy MSYS2 mingw32 transitive dependencies
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libgcc_s_dw2-1.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libgcc_s_dw2-1.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libwinpthread-1.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libwinpthread-1.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libstdc++-6.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libstdc++-6.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libbrotlidec.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libbrotlidec.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libbrotlicommon.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libbrotlicommon.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libidn2-0.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libidn2-0.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libunistring-5.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libunistring-5.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libnghttp2-14.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libnghttp2-14.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libnghttp3-9.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libnghttp3-9.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libngtcp2-16.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libngtcp2-16.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libngtcp2_crypto_ossl-0.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libngtcp2_crypto_ossl-0.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libpsl-5.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libpsl-5.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libssh2-1.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libssh2-1.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libzstd.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libzstd.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libcrypto-3.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libcrypto-3.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libssl-3.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libssl-3.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libjbig-0.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libjbig-0.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libLerc.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libLerc.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libdeflate.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libdeflate.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/liblzma-5.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/liblzma-5.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libsharpyuv-0.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libsharpyuv-0.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libbz2-1.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libbz2-1.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libintl-8.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libintl-8.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libiconv-2.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libiconv-2.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libcharset-1.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libcharset-1.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libharfbuzz-0.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libharfbuzz-0.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libgraphite2.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libgraphite2.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libglib-2.0-0.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libglib-2.0-0.dll"
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+      "C:/msys64/mingw32/bin/libpcre2-8-0.dll"
+      "$<TARGET_FILE_DIR:${APP_NAME}>/libpcre2-8-0.dll"
+    COMMENT "Copying 32-bit DLLs to output directory"
+  )
+endif()

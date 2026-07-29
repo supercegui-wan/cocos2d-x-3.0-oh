@@ -45,6 +45,10 @@ AppDelegate::~AppDelegate()
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
+    // Add Resources directory to search path so config files can be found
+    auto fileUtils = FileUtils::getInstance();
+    fileUtils->addSearchPath("Resources");
+
     // As an example, load config file
     // XXX: This should be loaded before the Director is initialized,
     // XXX: but at this point, the director is already initialized
@@ -64,7 +68,6 @@ bool AppDelegate::applicationDidFinishLaunching()
     auto screenSize = glview->getFrameSize();
   	auto designSize = Size(screenSize.width / 2, screenSize.height / 2);
 
-    auto fileUtils = FileUtils::getInstance();
     std::vector<std::string> searchPaths;
     
     if (screenSize.height > 320)

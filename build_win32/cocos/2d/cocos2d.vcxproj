@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B122BC52-FF57-3602-8E8C-7119478425B0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>cocos2d</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\cocos2d-x-3.0-oh\build_win32\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cocos2d.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\cocos2d-x-3.0-oh\build_win32\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cocos2d.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\cocos2d-x-3.0-oh\build_win32\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cocos2d.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\cocos2d-x-3.0-oh\build_win32\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cocos2d.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cocos2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4244;4334;4005;4820;4710;4514;4056;4996;4099</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;COCOS2D_DEBUG=1;_USRDLL;COCOS2DXWIN32_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_ENABLE_CHIPMUNK_INTEGRATION=1;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_USRDLL;COCOS2DXWIN32_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_ENABLE_CHIPMUNK_INTEGRATION=1;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4244;4334;4005;4820;4710;4514;4056;4996;4099</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;COCOS2DXWIN32_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_ENABLE_CHIPMUNK_INTEGRATION=1;UNICODE;_UNICODE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;COCOS2DXWIN32_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_ENABLE_CHIPMUNK_INTEGRATION=1;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4244;4334;4005;4820;4710;4514;4056;4996;4099</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;COCOS2DXWIN32_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_ENABLE_CHIPMUNK_INTEGRATION=1;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;COCOS2DXWIN32_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_ENABLE_CHIPMUNK_INTEGRATION=1;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4244;4334;4005;4820;4710;4514;4056;4996;4099</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;COCOS2DXWIN32_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_ENABLE_CHIPMUNK_INTEGRATION=1;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;COCOS2DXWIN32_EXPORTS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_ENABLE_CHIPMUNK_INTEGRATION=1;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\cocos2d-x-3.0-oh;G:\cocos2d-x-3.0-oh\cocos;G:\cocos2d-x-3.0-oh\cocos\audio\include;G:\cocos2d-x-3.0-oh\cocos\2d;G:\cocos2d-x-3.0-oh\cocos\2d\renderer;G:\cocos2d-x-3.0-oh\cocos\2d\platform;G:\cocos2d-x-3.0-oh\cocos\base;G:\cocos2d-x-3.0-oh\cocos\deprecated;G:\cocos2d-x-3.0-oh\cocos\physics;G:\cocos2d-x-3.0-oh\cocos\editor-support;G:\cocos2d-x-3.0-oh\cocos\math\kazmath;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\auto;G:\cocos2d-x-3.0-oh\cocos\scripting\lua-bindings\manual;G:\cocos2d-x-3.0-oh\extensions;G:\cocos2d-x-3.0-oh\external;G:\cocos2d-x-3.0-oh\external\tinyxml2;G:\cocos2d-x-3.0-oh\external\unzip;G:\cocos2d-x-3.0-oh\external\edtaa3func;G:\cocos2d-x-3.0-oh\external\chipmunk\include\chipmunk;G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop;G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32;G:\cocos2d-x-3.0-oh\external\jpeg\include\win32;G:\cocos2d-x-3.0-oh\external\png\include\win32;G:\cocos2d-x-3.0-oh\external\tiff\include\win32;G:\cocos2d-x-3.0-oh\external\webp\include\win32;G:\cocos2d-x-3.0-oh\external\glfw3\include\win32;G:\cocos2d-x-3.0-oh\external\freetype2\include\win32;G:\cocos2d-x-3.0-oh\external\websockets\include\win32;G:\cocos2d-x-3.0-oh\external\xxhash;G:\cocos2d-x-3.0-oh\external\win32-specific\gles\include\OGLES;G:\cocos2d-x-3.0-oh\external\win32-specific\icon\include;G:\cocos2d-x-3.0-oh\external\win32-specific\zlib\include;G:\cocos2d-x-3.0-oh\external\curl\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\cocos2d-x-3.0-oh\cocos\2d\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/cocos2d-x-3.0-oh/cocos/2d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HG:/cocos2d-x-3.0-oh -BG:/cocos2d-x-3.0-oh/build_win32 --check-stamp-file G:/cocos2d-x-3.0-oh/build_win32/cocos/2d/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/cocos2d-x-3.0-oh/cocos/2d/CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\2d\CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\physics\CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\2d\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\cocos2d-x-3.0-oh\build_win32\cocos\2d\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/cocos2d-x-3.0-oh/cocos/2d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HG:/cocos2d-x-3.0-oh -BG:/cocos2d-x-3.0-oh/build_win32 --check-stamp-file G:/cocos2d-x-3.0-oh/build_win32/cocos/2d/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/cocos2d-x-3.0-oh/cocos/2d/CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\2d\CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\physics\CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\2d\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\cocos2d-x-3.0-oh\build_win32\cocos\2d\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/cocos2d-x-3.0-oh/cocos/2d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HG:/cocos2d-x-3.0-oh -BG:/cocos2d-x-3.0-oh/build_win32 --check-stamp-file G:/cocos2d-x-3.0-oh/build_win32/cocos/2d/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/cocos2d-x-3.0-oh/cocos/2d/CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\2d\CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\physics\CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\2d\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\cocos2d-x-3.0-oh\build_win32\cocos\2d\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/cocos2d-x-3.0-oh/cocos/2d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -HG:/cocos2d-x-3.0-oh -BG:/cocos2d-x-3.0-oh/build_win32 --check-stamp-file G:/cocos2d-x-3.0-oh/build_win32/cocos/2d/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/cocos2d-x-3.0-oh/cocos/2d/CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\2d\CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\physics\CMakeLists.txt;G:\cocos2d-x-3.0-oh\cocos\2d\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\cocos2d-x-3.0-oh\build_win32\cocos\2d\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCUserDefault.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCAction.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionCamera.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTweenFunction.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionEase.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionGrid.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionGrid3D.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionInstant.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionInterval.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionManager.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionPageTurn3D.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionProgressTimer.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionTiledGrid.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionCatmullRom.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCActionTween.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCAtlasNode.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCNode.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventAcceleration.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventListenerAcceleration.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEvent.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventDispatcher.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventListener.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventKeyboard.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventListenerKeyboard.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventMouse.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventListenerMouse.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTouch.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventTouch.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventListenerTouch.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventCustom.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCEventListenerCustom.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCDrawingPrimitives.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCDrawNode.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCGrabber.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCGrid.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCNodeGrid.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCFont.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCFontAtlas.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCFontAtlasCache.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCFontFNT.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCFontFreeType.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCFontCharMap.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCLabel.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCLabelAtlas.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCLabelBMFont.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCLabelTTF.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCLabelTextFormatter.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCLayer.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCScene.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTransition.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTransitionPageTurn.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTransitionProgress.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCMenu.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCMenuItem.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCMotionStreak.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCProgressTimer.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCClippingNode.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCRenderTexture.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCParticleExamples.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCParticleSystem.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCParticleSystemQuad.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCParticleBatchNode.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCScriptSupport.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCAnimation.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCAnimationCache.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCSprite.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCSpriteBatchNode.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCSpriteFrame.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCSpriteFrameCache.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\ccUTF8.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCProfiling.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\TransformUtils.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\base64.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\ccUtils.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCVertex.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\TGAlib.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\ZipUtils.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\ccCArray.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCComponent.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCComponentContainer.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCIMEDispatcher.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTextFieldTTF.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTexture2D.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTextureAtlas.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTextureCache.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCParallaxNode.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTMXLayer.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTMXObjectGroup.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTMXTiledMap.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTMXXMLParser.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCTileMapAtlas.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCGLProgram.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\ccGLStateCache.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCShaderCache.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\ccShaders.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCConfiguration.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCDirector.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\CCScheduler.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\ccFPSImages.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\ccTypes.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\cocos2d.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\CCSAXParser.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\CCThread.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\CCGLViewProtocol.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\CCFileUtils.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\CCImage.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\renderer\CCCustomCommand.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\renderer\CCFrustum.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\renderer\CCGroupCommand.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\renderer\CCMaterialManager.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\renderer\CCQuadCommand.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\renderer\CCBatchCommand.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\renderer\CCRenderCommand.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\renderer\CCRenderer.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\renderer\CCRenderMaterial.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\deprecated\CCDeprecated.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\deprecated\CCNotificationCenter.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\external\edtaa3func\edtaa3func.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32\CCStdC.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32\CCFileUtilsWin32.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32\CCCommon.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32\CCApplication.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\desktop\CCGLView.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\2d\platform\win32\CCDevice.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\chipmunk\CCPhysicsContactInfo_chipmunk.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\chipmunk\CCPhysicsJointInfo_chipmunk.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\chipmunk\CCPhysicsShapeInfo_chipmunk.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\chipmunk\CCPhysicsBodyInfo_chipmunk.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\chipmunk\CCPhysicsWorldInfo_chipmunk.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\CCPhysicsBody.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\CCPhysicsContact.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\CCPhysicsShape.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\CCPhysicsJoint.cpp"  />
+    <ClCompile Include="G:\cocos2d-x-3.0-oh\cocos\physics\CCPhysicsWorld.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build_win32\ZERO_CHECK.vcxproj">
+      <Project>{C6F10ECE-5658-3E8C-AAD7-4EA34542FC86}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build_win32\external\chipmunk\src\chipmunk_static.vcxproj">
+      <Project>{AA18D4A6-4C96-3CB4-8BAA-2F7E404E21B5}</Project>
+      <Name>chipmunk_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build_win32\cocos\base\cocosbase.vcxproj">
+      <Project>{93665FB9-565C-3479-9489-830B6D9CF686}</Project>
+      <Name>cocosbase</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build_win32\cocos\math\kazmath\kazmath\kazmath.vcxproj">
+      <Project>{56717106-3616-3C6C-B70A-8B47E0AD80EA}</Project>
+      <Name>kazmath</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build_win32\external\tinyxml2\tinyxml2.vcxproj">
+      <Project>{D735C873-EECA-3308-9E21-B28F910543AF}</Project>
+      <Name>tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build_win32\external\unzip\unzip.vcxproj">
+      <Project>{D4A7F29F-4574-36E6-9050-D92D42C0E3CD}</Project>
+      <Name>unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\cocos2d-x-3.0-oh\build_win32\external\xxhash\xxhash.vcxproj">
+      <Project>{7B36E620-AAA7-33D7-AF72-5867979908DC}</Project>
+      <Name>xxhash</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
