@@ -147,8 +147,11 @@ bool Menu::initWithArray(const Vector<MenuItem*>& arrayOfItems)
         
         for (auto& item : arrayOfItems)
         {
-            this->addChild(item, z);
-            z++;
+            if (item)
+            {
+                this->addChild(item, z);
+                z++;
+            }
         }
     
         _selectedItem = nullptr;

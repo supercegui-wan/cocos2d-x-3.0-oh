@@ -718,7 +718,11 @@ Node* Node::getChildByTag(int tag)
 */
 void Node::addChild(Node *child, int zOrder, int tag)
 {    
-    CCASSERT( child != nullptr, "Argument must be non-nil");
+    if (child == nullptr)
+    {
+        CCLOG("Node::addChild: child is nullptr, ignoring");
+        return;
+    }
     CCASSERT( child->_parent == nullptr, "child already added. It can't be added again");
 
     if (_children.empty())
@@ -771,13 +775,21 @@ void Node::addChild(Node *child, int zOrder, int tag)
 
 void Node::addChild(Node *child, int zOrder)
 {
-    CCASSERT( child != nullptr, "Argument must be non-nil");
+    if (child == nullptr)
+    {
+        CCLOG("Node::addChild: child is nullptr, ignoring");
+        return;
+    }
     this->addChild(child, zOrder, child->_tag);
 }
 
 void Node::addChild(Node *child)
 {
-    CCASSERT( child != nullptr, "Argument must be non-nil");
+    if (child == nullptr)
+    {
+        CCLOG("Node::addChild: child is nullptr, ignoring");
+        return;
+    }
     this->addChild(child, child->_localZOrder, child->_tag);
 }
 
