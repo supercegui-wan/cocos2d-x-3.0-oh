@@ -31,7 +31,7 @@ THE SOFTWARE.
 #include <algorithm>
 
 #include "deprecated/CCString.h"
-#include "ccCArray.h"
+
 #include "TransformUtils.h"
 #include "CCGrid.h"
 #include "CCDirector.h"
@@ -42,7 +42,7 @@ THE SOFTWARE.
 #include "CCGLProgram.h"
 #include "CCEventDispatcher.h"
 #include "CCEvent.h"
-#include "CCEventTouch.h"
+
 #include "CCScene.h"
 
 #if CC_USE_PHYSICS

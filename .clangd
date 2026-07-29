@@ -1,47 +1,7 @@
 CompileFlags:
-  Add:
-    - "-std=c++11"
-    - "-DWIN32"
-    - "-D_WINDOWS"
-    - "-D_USRDLL"
-    - "-DCOCOS2DXWIN32_EXPORTS"
-    - "-D_CRT_SECURE_NO_WARNINGS"
-    - "-D_SCL_SECURE_NO_WARNINGS"
-    - "-DCC_ENABLE_CHIPMUNK_INTEGRATION=1"
-    - "-Icocos"
-    - "-Icocos/audio/include"
-    - "-Icocos/2d"
-    - "-Icocos/2d/renderer"
-    - "-Icocos/2d/platform"
-    - "-Icocos/2d/platform/desktop"
-    - "-Icocos/2d/platform/win32"
-    - "-Icocos/base"
-    - "-Icocos/deprecated"
-    - "-Icocos/physics"
-    - "-Icocos/editor-support"
-    - "-Icocos/math/kazmath"
-    - "-Icocos/scripting/lua-bindings/auto"
-    - "-Icocos/scripting/lua-bindings/manual"
-    - "-Iextensions"
-    - "-Iexternal"
-    - "-Iexternal/tinyxml2"
-    - "-Iexternal/unzip"
-    - "-Iexternal/edtaa3func"
-    - "-Iexternal/chipmunk/include/chipmunk"
-    - "-Iexternal/jpeg/include/win32"
-    - "-Iexternal/png/include/win32"
-    - "-Iexternal/tiff/include/win32"
-    - "-Iexternal/webp/include/win32"
-    - "-Iexternal/glfw3/include/win32"
-    - "-Iexternal/freetype2/include/win32"
-    - "-Iexternal/websockets/include/win32"
-    - "-Iexternal/xxhash"
-    - "-Iexternal/win32-specific/gles/include/OGLES"
-    - "-Iexternal/win32-specific/icon/include"
-    - "-Iexternal/win32-specific/zlib/include"
-    - "-Iexternal/curl/include/win32"
-    - "-Iexternal/libwebsockets-src"
-    - "-Iexternal/libwebsockets-src/win32port/win32helpers"
-    - "-Itests/cpp-tests/Classes"
-  Remove:
-    - "-m*"
+  Add: [-xc++, -std=c++11]
+---
+If:
+  PathMatch: .*\.h
+CompileFlags:
+  Add: [-xc++-header]
