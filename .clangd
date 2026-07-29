@@ -1,0 +1,6 @@
+CompileFlags:
+  Add:
+    - "-IC:/msys64/mingw32/include"
+    - "-I${workspaceFolder:tests/cpp-tests/Classes}"
+  Remove:
+    - "-m*"
