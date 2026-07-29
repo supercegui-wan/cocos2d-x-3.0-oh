@@ -39,6 +39,7 @@
 #include <io.h>
 #include <WS2tcpip.h>
 #include <Winsock2.h>
+#include <windows.h>
 #define bzero(a, b) memset(a, 0, b);
 
 #else
@@ -224,6 +225,33 @@ static void _log(const char *format, va_list args)
     WideCharToMultiByte(CP_ACP, 0, wszBuf, -1, buf, sizeof(buf), NULL, FALSE);
     printf("%s", buf);
     fflush(stdout);
+
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WIN32
+    // Write log to file (MH-Game.log in executable directory)
+    static FILE* s_logFile = nullptr;
+    if (s_logFile == nullptr)
+    {
+        char logPath[MAX_PATH];
+        GetModuleFileNameA(NULL, logPath, MAX_PATH);
+        char* lastSlash = strrchr(logPath, '\\');
+        if (lastSlash)
+        {
+            *(lastSlash + 1) = '\0';
+            strcat(logPath, "MH-Game.log");
+        }
+        s_logFile = fopen(logPath, "w");
+        if (s_logFile)
+        {
+            // Write UTF-8 BOM for better compatibility
+            fprintf(s_logFile, "\xEF\xBB\xBF");
+        }
+    }
+    if (s_logFile)
+    {
+        fprintf(s_logFile, "%s", buf);
+        fflush(s_logFile);
+    }
+#endif
 #else
     // Linux, Mac, iOS, etc
     fprintf(stdout, "cocos2d: %s", buf);

@@ -1,4 +1,11 @@
 /*
+// 修复说明：此文件为C语言库头文件，当在C++项目中使用时，
+// 构建系统可能会错误地传递-std=c99编译标志给C++编译器，
+// 导致"Invalid argument '-std=c99' not allowed with 'C++'"错误。
+// 建议在构建系统（如CMakeLists.txt或Makefile）中分离C和C++的编译标志：
+// C文件使用-std=c99，C++文件使用-std=c++11或更高版本。
+// 同时确保此头文件在C++环境下通过下面的extern "C"正确包装。
+//
  * jpeglib.h
  *
  * Copyright (C) 1991-1998, Thomas G. Lane.
