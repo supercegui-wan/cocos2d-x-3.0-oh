@@ -1,0 +1,57 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/cocos",
+                "${workspaceFolder}/cocos/audio/include",
+                "${workspaceFolder}/cocos/2d",
+                "${workspaceFolder}/cocos/2d/renderer",
+                "${workspaceFolder}/cocos/2d/platform",
+                "${workspaceFolder}/cocos/2d/platform/desktop",
+                "${workspaceFolder}/cocos/2d/platform/win32",
+                "${workspaceFolder}/cocos/base",
+                "${workspaceFolder}/cocos/deprecated",
+                "${workspaceFolder}/cocos/physics",
+                "${workspaceFolder}/cocos/editor-support",
+                "${workspaceFolder}/cocos/math/kazmath",
+                "${workspaceFolder}/cocos/scripting/lua-bindings/auto",
+                "${workspaceFolder}/cocos/scripting/lua-bindings/manual",
+                "${workspaceFolder}/extensions",
+                "${workspaceFolder}/external",
+                "${workspaceFolder}/external/tinyxml2",
+                "${workspaceFolder}/external/unzip",
+                "${workspaceFolder}/external/edtaa3func",
+                "${workspaceFolder}/external/chipmunk/include/chipmunk",
+                "${workspaceFolder}/external/jpeg/include/win32",
+                "${workspaceFolder}/external/png/include/win32",
+                "${workspaceFolder}/external/tiff/include/win32",
+                "${workspaceFolder}/external/webp/include/win32",
+                "${workspaceFolder}/external/glfw3/include/win32",
+                "${workspaceFolder}/external/freetype2/include/win32",
+                "${workspaceFolder}/external/websockets/include/win32",
+                "${workspaceFolder}/external/xxhash",
+                "${workspaceFolder}/external/win32-specific/gles/include/OGLES",
+                "${workspaceFolder}/external/win32-specific/icon/include",
+                "${workspaceFolder}/external/win32-specific/zlib/include",
+                "${workspaceFolder}/external/curl/include/win32",
+                "${workspaceFolder}/external/libwebsockets-src",
+                "${workspaceFolder}/external/libwebsockets-src/win32port/win32helpers"
+            ],
+            "defines": [
+                "WIN32",
+                "_WINDOWS",
+                "_USRDLL",
+                "COCOS2DXWIN32_EXPORTS",
+                "_CRT_SECURE_NO_WARNINGS",
+                "_SCL_SECURE_NO_WARNINGS",
+                "CC_ENABLE_CHIPMUNK_INTEGRATION=1"
+            ],
+            "intelliSenseMode": "msvc-x86",
+            "cStandard": "c99",
+            "cppStandard": "c++11"
+        }
+    ],
+    "version": 4
+}
