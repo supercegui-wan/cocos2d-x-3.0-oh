@@ -292,8 +292,8 @@ set_target_properties(${APP_NAME} PROPERTIES
      RUNTIME_OUTPUT_DIRECTORY  "${APP_BIN_DIR}")
 
 pre_build(${APP_NAME}
-  COMMAND ${CMAKE_COMMAND} -E remove_directory ${APP_BIN_DIR}/Resources
-  COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/Resources ${APP_BIN_DIR}/Resources
+  COMMAND ${CMAKE_COMMAND} -E remove_directory $<TARGET_FILE_DIR:${APP_NAME}>/Resources
+  COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/Resources $<TARGET_FILE_DIR:${APP_NAME}>/Resources
   )
 
 if(WIN32)
@@ -305,9 +305,6 @@ if(WIN32)
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
       "${CMAKE_SOURCE_DIR}/external/win32-specific/gles/prebuilt/glew32.dll"
       "$<TARGET_FILE_DIR:${APP_NAME}>/glew32.dll"
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-      "${CMAKE_SOURCE_DIR}/external/jpeg/prebuilt/win32/libjpeg-8.dll"
-      "$<TARGET_FILE_DIR:${APP_NAME}>/libjpeg-8.dll"
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
       "${CMAKE_SOURCE_DIR}/external/png/prebuilt/win32/libpng16-16.dll"
       "$<TARGET_FILE_DIR:${APP_NAME}>/libpng16-16.dll"

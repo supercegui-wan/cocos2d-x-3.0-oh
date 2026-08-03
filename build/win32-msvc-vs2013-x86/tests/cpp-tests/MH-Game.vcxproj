@@ -116,8 +116,6 @@
 if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libjpeg-8.dll
-if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libpng16-16.dll
 if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/libtiff-6.dll
@@ -247,8 +245,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/glfw3.dll
 if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/glew32.dll
-if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libjpeg-8.dll
 if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/libpng16-16.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -380,8 +376,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
 if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libjpeg-8.dll
-if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libpng16-16.dll
 if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/tiff/prebuilt/win32/libtiff-6.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/libtiff-6.dll
@@ -511,8 +505,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/glfw3/prebuilt/win32/glfw3.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/glfw3.dll
 if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/win32-specific/gles/prebuilt/glew32.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/glew32.dll
-if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/jpeg/prebuilt/win32/libjpeg-8.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libjpeg-8.dll
 if %errorlevel% neq 0 goto :cmEnd
 "D:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/cocos2d-x-3.0-oh/external/png/prebuilt/win32/libpng16-16.dll G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/libpng16-16.dll
 if %errorlevel% neq 0 goto :cmEnd

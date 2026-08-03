@@ -75,9 +75,9 @@
     <PreBuildEvent>
       <Message>MH-Game_PRE_BUILD ...</Message>
       <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
+"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/Resources
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Debug/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -99,9 +99,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PreBuildEvent>
       <Message>MH-Game_PRE_BUILD ...</Message>
       <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
+"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/Resources
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Release/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -123,9 +123,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PreBuildEvent>
       <Message>MH-Game_PRE_BUILD ...</Message>
       <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
+"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/Resources
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/MinSizeRel/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -147,9 +147,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PreBuildEvent>
       <Message>MH-Game_PRE_BUILD ...</Message>
       <Command>setlocal
-"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
+"D:\Program Files\CMake\bin\cmake.exe" -E remove_directory G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/Resources
 if %errorlevel% neq 0 goto :cmEnd
-"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/Resources
+"D:\Program Files\CMake\bin\cmake.exe" -E copy_directory G:/cocos2d-x-3.0-oh/tests/cpp-tests/Resources G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/bin/MH-Game/RelWithDebInfo/Resources
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -220,6 +220,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ProjectReference Include="G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/ZERO_CHECK.vcxproj">
       <Project>09AF778E-C76A-3D6B-A45E-DE60ADBDD2EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/MH-Game.vcxproj">
+      <Project>0F84FFC5-10CF-361C-9C6C-3457CF3F140F</Project>
     </ProjectReference>
     <ProjectReference Include="G:/cocos2d-x-3.0-oh/build/win32-msvc-vs2013-x86/tests/cpp-tests/MH-Game_CORE_PRE_BUILD.vcxproj">
       <Project>B059EE64-AD9C-3480-B5EE-A15265EF9EB2</Project>
