@@ -348,7 +348,6 @@ Global
 		{64AF9801-F6A9-3967-A0F0-60A0A4D0282A}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8DEEBACC-E697-39D7-B990-679C15778AC0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityAddIns) = postSolution
 	EndGlobalSection
